@@ -28,18 +28,17 @@ class Building
         end
     end
 
-    def self.name_and_address
-        
+    def self.placard
+        @name, @address
     end
 
 end
 
-Building.new("Sear's Tower", "Chicago, IL", 110, 1560)
-Building.new("Empire State Building", "New York, New York", 102, 1200) 
-Building.new("White House", "Washington, DC", 4, 4)
-Building.new("Big Ben", "London, England", 50, 250)
+sears_tower = Building.new("Sear's Tower", "Chicago, IL", 110, 1560)
+empire_state = Building.new("Empire State Building", "New York, New York", 102, 1200) 
+white_house = Building.new("White House", "Washington, DC", 4, 4)
+big_ben = Building.new("Big Ben", "London, England", 11, 250)
 
 
 
 binding.pry
-'hi'
