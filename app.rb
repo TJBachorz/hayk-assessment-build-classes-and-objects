@@ -26,7 +26,7 @@ class Building
     #The class should tell the average number of tenants in a building
     
     def self.tenants_per_building
-        all.map {|building| building.tenants }
+        self.all.map {|building| building.tenants }
     end
 
     def self.average_tenants_of_buildings
